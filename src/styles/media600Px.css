@@ -1,0 +1,51 @@
+@media (min-width: 600px) {
+
+    .header {
+        flex-direction: row;
+
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #app {
+
+        max-width: 60%;
+        width: auto;
+        margin: 25px auto 0px auto;
+    }
+
+    .app__container-first {
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .modal {
+
+        max-width: 450px;
+        margin: 0px 25% 0px 25%;
+
+    }
+
+    .modal-edit {
+
+        gap: 35px;
+        padding-top: 30px;
+    }
+
+    .modal__container-button {
+        flex-direction: row;
+    }
+
+    .modal__div-third {
+
+        flex-direction: row;
+    }
+
+    .modal__div-four {
+
+        justify-content: end;
+    }
+
+
+}
