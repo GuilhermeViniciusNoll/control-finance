@@ -8,7 +8,7 @@
   <title>Control Finance</title>
   <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon" />
   <meta name="description" content="Control Finance - Seu controle financeiro" />
-  
+
   <link rel="stylesheet" href="./src/styles/globalStyles.css" />
   <link rel="stylesheet" href="./src/styles/index.css" />
   <link rel="stylesheet" href="./src/styles/modal.css">
@@ -53,20 +53,19 @@
       <p class="modal__paragraph">Digite o valor e em seguida aperte no botão referente ao tipo do valor </p>
       <div class="modal__div-second">
         <label class="modal__label" for="value">Valor</label>
-        <input placeholder="R$ 00,00" class="modal__input" name="value" type="number">
+        <input placeholder="R$ 00,00" min="0" class="modal__input" name="value" type="number">
       </div>
       <div class="modal__div-third">
         <h2 class="modal__h2">Tipo de Valor</h2>
         <div class="modal__container-button">
-          <button class="modal__button-input modal__button--categoryID" name="categoryID" id="0" autofocus
-            type="submit">Entrada</button>
+          <button class="modal__button-input modal__button--categoryID" name="categoryID" id="0" type="submit">Entrada</button>
           <button class="modal__button-exit modal__button--categoryID" name="categoryID" id="1">Saída</button>
         </div>
-        </div>
-        <div class="modal__div-four">
-          <button class="modal__button-cancel close-modal modal__button">Cancelar</button>
-          <button type="submit" class="modal__button-confirm modal__button">Inserir Valor</button>
-        </div>
+      </div>
+      <div class="modal__div-four">
+        <button class="modal__button-cancel close-modal modal__button">Cancelar</button>
+        <button type="submit" class="modal__button-confirm modal__button">Inserir Valor</button>
+      </div>
     </div>
   </dialog>
   <script type="module" src="./src/scripts/index.js"></script>

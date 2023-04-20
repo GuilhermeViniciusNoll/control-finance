@@ -51,9 +51,7 @@ export function handleRemoveValue() {
         element.addEventListener('click', () => {
             const valueRemove = insertedValues.findIndex(value => value.id === Number(element.dataset.id))
             insertedValues.splice(valueRemove, 1)
-            for (let i = 0; i < insertedValues.length; i++) {
-                insertedValues[i].id = i + 1
-            }
+            insertedValues.forEach((element, index) => { element.id = index + 1 })
             renderValues(insertedValues)
         })
     })

@@ -1,3 +1,14 @@
+
+@keyframes MoveModal {
+    0% {
+        transform:  translateY(-150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 .modal {
 
     height: 432px;
@@ -9,10 +20,14 @@
 
     border: none;
     border-radius: var(--radius-1);
+
+    animation: MoveModal 0.2s linear;
+    
 }
 
 .modal::backdrop {
-    background-color: rgba(33, 37, 41, 0.5);;
+    background-color: rgba(33, 37, 41, 0.5);
+    ;
 }
 
 .modal-edit {
@@ -104,15 +119,14 @@
     gap: 10px;
 }
 
-.modal__button-input {}
-
-.modal__button-exit {}
 
 .modal__button--categoryID {
 
     background-color: var(--fixed-white);
     border: solid 1.5px var(--color-grey-5);
     color: var(--color-grey-2);
+    border-radius: var(--radius-1);
+
 
     height: 32px;
     padding: 0px 14px;
@@ -126,7 +140,7 @@
     color: var(--color-brand-1);
 }
 
-.modal__button--categoryID:focus {
+.modal__button--toggle {
 
     background-color: var(--color-brand-3);
     border: solid 1.5px var(--color-brand-1);
